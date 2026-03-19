@@ -68,7 +68,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
-          <div className="w-24 h-24 md:w-36 md:h-36 flex items-center justify-center overflow-hidden" aria-hidden="true">
+          <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center overflow-hidden" aria-hidden="true">
             <img 
               src={BUSINESS_CONFIG.logo} 
               alt={BUSINESS_CONFIG.name} 
