@@ -63,16 +63,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-1 shadow-lg' : 'bg-transparent py-2'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-3'}`}
       aria-label="Main navigation"
-      data-version="v1.0.2-logo-fix"
+      data-version="v1.0.3-ux-polish"
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
           <img 
             src={BUSINESS_CONFIG.logo} 
             alt={BUSINESS_CONFIG.name} 
-            className="h-6 md:h-8 w-auto object-contain" 
+            className="h-8 md:h-12 w-auto object-contain" 
           />
         </a>
 
