@@ -63,15 +63,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-4'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-1 shadow-lg' : 'bg-transparent py-2'}`}
       aria-label="Main navigation"
+      data-version="v1.0.2-logo-fix"
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
           <img 
             src={BUSINESS_CONFIG.logo} 
             alt={BUSINESS_CONFIG.name} 
-            className="h-8 md:h-10 w-auto object-contain" 
+            className="h-6 md:h-8 w-auto object-contain" 
           />
         </a>
 
@@ -1213,11 +1214,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-32 h-32 flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <img 
                   src={BUSINESS_CONFIG.logo} 
                   alt={`${BUSINESS_CONFIG.name} Logo`} 
-                  className="h-28 w-28 object-contain" 
+                  className="h-10 w-auto object-contain" 
                 />
               </div>
             </div>
