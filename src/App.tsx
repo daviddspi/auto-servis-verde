@@ -68,11 +68,11 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
-          <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center overflow-hidden" aria-hidden="true">
+          <div className="h-10 md:h-14 flex items-center justify-center overflow-hidden" aria-hidden="true">
             <img 
               src={BUSINESS_CONFIG.logo} 
               alt={BUSINESS_CONFIG.name} 
-              className="h-full w-full object-contain p-0" 
+              className="h-full w-auto object-contain p-0" 
             />
           </div>
         </a>
