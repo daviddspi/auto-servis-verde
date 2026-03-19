@@ -63,9 +63,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-6 shadow-lg' : 'bg-transparent py-10'}`}
       aria-label="Main navigation"
-      data-version="v1.0.4-layout-polish"
+      data-version="v1.0.5-lux-nav"
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
@@ -119,12 +119,12 @@ const Navbar = () => {
             className="absolute top-full left-0 right-0 bg-black border-t border-white/10 p-6 md:hidden"
             role="menu"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6 items-center text-center">
               {navLinks.map((link) => (
                 <a 
                   key={link.name} 
                   href={link.href} 
-                  className="text-lg font-medium hover:text-primary transition-colors min-h-[44px] flex items-center"
+                  className="text-2xl font-black italic uppercase tracking-widest hover:text-primary transition-colors min-h-[60px] flex items-center justify-center w-full"
                   onClick={() => setIsMobileMenuOpen(false)}
                   role="menuitem"
                 >
