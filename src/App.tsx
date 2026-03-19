@@ -63,18 +63,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-4'}`}
       aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
-          <div className="h-10 md:h-14 flex items-center justify-center overflow-hidden" aria-hidden="true">
-            <img 
-              src={BUSINESS_CONFIG.logo} 
-              alt={BUSINESS_CONFIG.name} 
-              className="h-full w-auto object-contain p-0" 
-            />
-          </div>
+          <img 
+            src={BUSINESS_CONFIG.logo} 
+            alt={BUSINESS_CONFIG.name} 
+            className="h-8 md:h-10 w-auto object-contain" 
+          />
         </a>
 
         {/* Desktop Nav */}
