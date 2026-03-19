@@ -63,9 +63,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-8 shadow-lg' : 'bg-transparent py-12'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 md:py-8 shadow-lg' : 'bg-transparent py-6 md:py-12'}`}
       aria-label="Main navigation"
-      data-version="v1.0.7-pro-max-final"
+      data-version="v1.0.8-final-polish"
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center active:scale-95 transition-transform" aria-label="Početna">
@@ -208,7 +208,7 @@ const Hero = () => {
       </div>
 
       {/* Hero copy */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-24 md:pt-40 -translate-y-12 md:translate-y-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 md:pt-40 -translate-y-6 md:translate-y-0">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
